@@ -1,0 +1,44 @@
+/////////////////////////////////////////////////////////////////////////////
+// Name:        samples/samples.rc
+// Purpose:     a standard Win32 .rc file for the wxWindows samples
+// Author:      Vadim Zeitlin
+// Modified by:
+// Created:     04.08.03
+// RCS-ID:      $Id: sample.rc 22863 2003-08-14 14:08:53Z VS $
+// Copyright:   (c) 2003 Vadim Zeitlin <vadim@wxwindows.org>
+// Licence:     wxWindows licence
+/////////////////////////////////////////////////////////////////////////////
+
+// this minimal resource file is all what is needed for most of the wxWindows
+// samples
+
+// note that the icon used by the Explorer (i.e. the programs icon) is the
+// first icon in the executable and the icons are sorted both by their order
+// (Win9x) and by alphabetically (!) (NT), so put this icon first and give it
+// a name starting with "a"
+aaaaaaaa ICON "sample.ico"
+
+// this icon is used with wxFrame::SetIcon()
+sample ICON "sample.ico"
+
+// set this to 1 if you don't want to use manifest resource (manifest resource
+// is needed to enable visual styles on Windows XP - see docs/msw/winxp.txt
+// for more information)
+#define wxUSE_NO_MANIFEST 0
+
+// this is not always needed but doesn't hurt (except making the executable
+// very slightly larger): this file contains the standard icons, cursors, ...
+#include "C:/wxWidgets-2.9.1/include/wx/msw/wx.rc"
+
+
+MY_CURSOR_HAND           CURSOR  DISCARDABLE     "cur/hand.cur"
+MY_CURSOR_BULLSEYE       CURSOR  DISCARDABLE     "cur/bullseye.cur"
+MY_CURSOR_PENCIL         CURSOR  DISCARDABLE     "cur/pencil.cur"
+MY_CURSOR_MAGNIFIER      CURSOR  DISCARDABLE     "cur/magnif1.cur"
+MY_CURSOR_ROLLER         CURSOR  DISCARDABLE     "cur/roller.cur"
+MY_CURSOR_PBRUSH         CURSOR  DISCARDABLE     "cur/pbrush.cur"
+MY_CURSOR_PLEFT          CURSOR  DISCARDABLE     "cur/pntleft.cur"
+MY_CURSOR_PRIGHT         CURSOR  DISCARDABLE     "cur/pntright.cur"
+MY_CURSOR_BLANK          CURSOR  DISCARDABLE     "cur/blank.cur"
+MY_CURSOR_RIGHT_ARROW    CURSOR  DISCARDABLE     "cur/rightarr.cur"
+MY_CURSOR_CROSS          CURSOR  DISCARDABLE     "cur/cross.cur"

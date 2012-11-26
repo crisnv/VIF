@@ -1,8 +1,13 @@
 This is the first version of the VIF photo navigator.
 
 Lib dependencies:
-Opencv
-WXwidgets
+- Opencv
+http://sourceforge.net/projects/opencvlibrary/
+
+
+- WxWidgets
+http://www.wxwidgets.org/
+
 
 
 contact:
